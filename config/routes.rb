@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
+  get 'tutorials' => 'tutorial#tutorial'
   devise_scope :user do
   authenticated :user do
-    root :to => 'books#index'
+    root :to => 'tutorial#tutorial'
   end
   unauthenticated :user do
     root :to => 'devise/registrations#new', as: :unauthenticated_root
