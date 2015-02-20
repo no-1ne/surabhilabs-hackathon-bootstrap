@@ -42,14 +42,14 @@ app developed on top of this easily to Heroku.
 * Come out of the postgres console using:
   <pre>
    postgres=# \q
-  <\pre>
+  </pre>
 
 * We need to now change a postgres configuration for the db engine to allow us login with username/password
   Open the file pg_hba.conf using:
   <pre>
      $ sudo vi /etc/postgresql/9.3/main/pg_hba.conf
   </pre>
-  Go to line 85, modify 'peer' to 'md5' and saw the file.
+  Go to line 85, modify 'peer' to 'md5' and save the file.
 
 * Restart the postgresql service using:
   <pre>
@@ -70,7 +70,7 @@ app developed on top of this easily to Heroku.
 
 * You can access the sign up page from http://YOUR-APP-URL/users/sign_up
 
-And your are all set to develop your actual on top of this.
+And your are all set to develop your actual app on top of this.
 
 # Publishing the app to Heroku
 
