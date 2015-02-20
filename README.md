@@ -6,7 +6,15 @@ devise-bootstrap-views and bootstrap-generators.
 devise gem provides authentication for your app
 bootstrap gems provide cool look 
 Since this application has both of the above, it can serve as a base for your app.
-
+# Getting Started
+ <pre>
+ $ bundle
+ </pre>
+* Then run db migration using the below command:
+ <pre>
+ $ rake db:migrate
+ </pre>
+Now start your rails server
 
 
 # Publishing the app to Heroku
