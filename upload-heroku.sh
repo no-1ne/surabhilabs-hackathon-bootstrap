@@ -1,4 +1,4 @@
-git add -a
+git add -A
 git add . 
 git commit -m "Commit at"+"`date`"
 heroku login
